@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0px;
+    }
+    .container{
+      height: 748px;
+      width: 748px;
+      background-color: #000;
+      gap: 9px;
+      display: grid;
+      grid-template-columns: 320px 360px auto;
+      grid-template-rows: 414px auto 20px;
+    }
+
+    .son1{
+      background-color: #F0F1EC;
+    }
+
+    .obj1{
+      background-color: #E72F24;
+    }
+
+    .obj2{
+      grid-column: span 2;
+    }
+
+    .obj5{
+      grid-row: span 2;
+      display: grid;
+      grid-template: 140px 1fr / 1fr;
+      gap: 9px;
+      background-color: #000;
+    }
+    
+    .son3{
+      height: 130px;
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+
+    .obj7{
+      display: grid;
+      grid-template: 1fr / 198px 153px;
+      background-color: #000;
+      gap: 9px;
+    }
+    .obj8{
+      background-color: #F9D01E;
+    }
+    .obj9{
+      background-color: #232629;
+    }
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="son1 obj1"></div>
+    <div class="son1 obj2"></div>
+    <div class="son1 obj3"></div>
+    <div class="son1 obj4"></div>
+    <div class="son1 obj5">
+      <div class="son2">
+        <div class="son3"></div>
+      </div>
+      <div class="son1"></div>
+    </div>
+    <div class="son1 obj6"></div>
+    <div class="son1 obj7">
+      <div class="obj8"></div>
+      <div class="obj9"></div>
+    </div>
+  </div>
+  <!-- Write your HTML here -->
+</body>
+
+</html>
